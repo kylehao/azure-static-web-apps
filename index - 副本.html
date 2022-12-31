@@ -1,0 +1,605 @@
+﻿
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>听松阁米表</title>
+
+<style>
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: normal 16px/1.5 'Titillium Web', sans-serif;
+  background: linear-gradient(54deg, #9164ff, #8bfff4);
+  color: #3c3f64;
+  overflow-x: hidden;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+a {
+  text-decoration:none;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #fff;
+}
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) rotate(45deg);
+  width: 20px;
+  height: 20px;
+  z-index: 2;
+  background: #eee;
+}
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 360px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 4px 13px 30px 1px rgba(252, 56, 56, 0.2);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.timeline ul li div time {
+  position: absolute;
+  background: #f5af19;
+  width: 150px;
+  height: 30px;
+  top: -15px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  letter-spacing: 2px;
+}
+.timeline ul li div div {
+  height: 94px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.timeline ul li div div p {
+  text-align: center;
+}
+.timeline ul li div .discovery {
+  margin-right: 12px;
+}
+.timeline ul li:nth-of-type(odd) > div {
+  left: 50px;
+}
+.timeline ul li:nth-of-type(even) > div {
+  left: -404px;
+}
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.timeline ul li:nth-of-type(odd) div {
+  transform: translate3d(100px, -10px, 0) rotate(10deg);
+}
+.timeline ul li:nth-of-type(even) div {
+  transform: translate3d(-100px, -10px, 0) rotate(10deg);
+}
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px;
+    flex-direction: column;
+  }
+  .timeline ul li div div {
+    width: 100%;
+    margin: 10px;
+  }
+  .timeline ul li:nth-of-type(even) > div {
+    left: -289px;
+  }
+}
+@media screen and (max-width: 600px) {
+  body {
+    background: #8bfff4;
+  }
+
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+  .timeline ul li:nth-of-type(even) > div {
+    left: 45px;
+  }
+}
+
+/* _site-header.css */
+.site-header {
+  text-align: center;
+  padding: 40px 0;
+
+}
+.site-header__title {
+  font-size: 46px;
+  color: #fff;
+  padding: 50px 0;
+  text-shadow: 8px 8px 8px #777777;
+}
+.site-header__ti {
+  font-size: 22px;
+  color: #000;
+  padding: 20px 0;
+  text-shadow: 5px 5px 5px #E6E6E6;
+}
+.site-header__cike {
+  font-size: 26px;
+  color: #551A8B;
+  padding: 50px 0;
+  text-shadow: 3px 3px 3px #EEE;
+}
+
+/* _wrapper.css */
+.wrapper {
+  padding-left: 18px;
+  padding-right: 18px;
+  max-width: 1236px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrapper">
+    <h1 class="site-header__title">听松阁米表</a></h1>
+    <h3 class="site-header__ti">邮箱：kylehao#163.com</h3>
+  </div>
+</header>
+
+<section class="timeline">
+    <ul>
+        <li>
+            <div>
+                <time>&nbsp;(1).info域名</time>
+                <div class="discovery">
+                    <h1><a href="http://kkkk.info"  target="_blank">kkkk.info</a></h1>
+                    <p>
+                        @豹子米
+                    </p>
+                </div>
+                <div class="scientist">
+                    <h1><a href="http://444.info"  target="_blank">444.info</a></h1>
+                    <span>@豹子米</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>&nbsp;(2).red域名</time>
+                <div class="discovery">
+                    <h1><a href="http://yyy.red"  target="_blank">yyy.red</a></h1>
+                    <p>
+                        @云音乐
+                    </p>
+                </div>
+                <div class="scientist">
+                    <h1><a href="http://qqq.red"  target="_blank">qqq.red</a></h1>
+                    <span>@氢气球</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>&nbsp;(3).red域名</time>
+                <div class="discovery">
+                    <h1><a href="http://ggg.red"  target="_blank">ggg.red</a></h1>
+                    <p>
+                        @共工阁
+                    </p>
+                </div>
+                <div class="scientist">
+                    <h1><a href="http://955559.xyz"  target="_blank">955559.xyz</a></h1>
+                    <span>@十年</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>&nbsp;(4).name域名</time>
+                <div class="discovery">
+                    <h1><a href="http://2222.name"  target="_blank">2222.name</a></h1>
+                    <p>
+                        @豹子米
+                    </p>
+                </div>
+                
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>&nbsp;(5)263组合域名</time>
+                <div class="discovery">
+                    <h1><a href="http://263.ink"  target="_blank">263.ink</a></h1>
+                    <p>
+                        @263
+                    </p>
+                </div>
+                <div class="scientist">
+                    <h1><a href="http://263.cx"  target="_blank">263.cx</a></h1>
+                    <span>@263</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>&nbsp;(6).ltd域名</time>
+                <div class="discovery">
+                    <h1><a href="http://741.ltd"  target="_blank">741.ltd</a></h1>
+                    <p>
+                        @气死你
+                    </p>
+                </div>
+                <div class="scientist">
+                    <h1><a href="http://sogou.ltd"  target="_blank">sogou.ltd</a></h1>
+                    <span>@搜狗</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>&nbsp;(7).ltd域名</time>
+                <div class="discovery">
+                    <h1><a href="http://2345.ltd"  target="_blank">2345.ltd</a></h1>
+                    <p>
+                        @顺子
+                    </p>
+                </div>
+                <div class="scientist">
+                    <h1><a href="http://mmmmm.ltd"  target="_blank">mmmmm.ltd</a></h1>
+                    <span>@豹子</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>&nbsp;(8).ltd域名</time>
+                <div class="discovery">
+                    <h1><a href="http://yyyyy.ltd"  target="_blank">yyyyy.ltd</a></h1>
+                    <p>
+                        @豹子
+                    </p>
+                </div>
+                <div class="scientist">
+                    <h1><a href="http://ppppp.ltd"  target="_blank">ppppp.ltd</a></h1>
+                    <span>@豹子</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>&nbsp;(9).ltd域名</time>
+                <div class="discovery">
+                    <h1><a href="http://wwwww.ltd"  target="_blank">wwwww.ltd</a></h1>
+                    <p>
+                        @吾问无为谓
+                    </p>
+                </div>
+                <div class="scientist">
+                    <h1><a href="http://ooooo.ltd"  target="_blank">ooooo.ltd</a></h1>
+                    <span>@豹子</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>&nbsp;(10).ltd域名</time>
+                <div class="discovery">
+                    <h1><a href="http://44444.ltd"  target="_blank">44444.ltd</a></h1>
+                    <p>
+                        @豹子
+                    </p>
+                </div>
+                <div class="scientist">
+                    <h1><a href="http://444444.ltd"  target="_blank">444444.ltd</a></h1>
+                    <span>@搜狗</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>&nbsp;(11)091组合域名</time>
+                <div class="discovery">
+                    <h1><a href="http://>091.ltd"  target="_blank">091.ltd</a></h1>
+                    <p>
+                        @组合域名
+                    </p>
+                </div>
+                <div class="scientist">
+                    <h1><a href="http://091.pw"  target="_blank">091.pw</a></h1>
+                    <span>@组合域名</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>&nbsp;(12).com域名</time>
+                <div class="discovery">
+                    <h1><a href="http://skycz.com"  target="_blank">skycz.com</a></h1>
+                    <p>
+                        @橙子天空
+                    </p>
+                </div>
+                <div class="scientist">
+                    <h1><a href="http://free163.com"  target="_blank">free163.com</a></h1>
+                    <span>@free163</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>&nbsp;(13).net域名</time>
+                <div class="discovery">
+                    <h1><a href="http://9b9.net"  target="_blank">9b9.net</a></h1>
+                    <p>
+                        @3杂
+                    </p>
+                </div>
+                <div class="scientist">
+                    <h1><a href="http://u7u.net"  target="_blank">u7u.net</a></h1>
+                    <span>@3杂</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>&nbsp;(14)iiiiiiii域名</time>
+                <div class="discovery">
+                    <h1><a href="http://iiiiiiii.net"  target="_blank">iiiiiiii.net</a></h1>
+                    <p>
+                        @8i
+                    </p>
+                </div>
+                <div class="scientist">
+                    <h1><a href="http://iiiiiiii.top"  target="_blank">iiiiiiii.top</a></h1>
+                    <span>@8i</span>
+                </div>
+            </div>
+        </li>       
+        <li>
+            <div>
+                <time>&nbsp;(15).run域名</time>
+                <div class="discovery">
+                    <h1><a href="http://mp4.run"  target="_blank">mp4.run</a></h1>
+                    <p>
+                        @mp4
+                    </p>
+                </div>
+                <div class="scientist">
+                    <h1><a href="http://eeee.run"  target="_blank">eeee.run</a></h1>
+                    <span>@豹子</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>&nbsp;(16)free163域名</time>
+                <div class="discovery">
+                    <h1><a href="http://free163.cc"  target="_blank">free163.cc</a></h1>
+                    <p>
+                        @free163
+                    </p>
+                </div>
+                <div class="scientist">
+                    <h1><a href="http://free163.top"  target="_blank">free163.top</a></h1>
+                    <span>@free163</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>&nbsp;(17)iiiiiiii域名</time>
+                <div class="discovery">
+                    <h1><a href="http://free163.win"  target="_blank">free163.win</a></h1>
+                    <p>
+                        @free163
+                    </p>
+                </div>
+                <div class="scientist">
+                    <h1><a href="http://pu.cx"  target="_blank">pu.cx</a></h1>
+                    <span>@普</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>&nbsp;(18)4y域名</time>
+                <div class="discovery">
+                    <h1><a href="http://4y.gs"  target="_blank">4y.gs</a></h1>
+                    <p>
+                        @for you
+                    </p>
+                </div>
+                <div class="scientist">
+                    <h1><a href="http://4y.pw"  target="_blank">4y.pw</a></h1>
+                    <span>@for you</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>&nbsp;(19).gs域名</time>
+                <div class="discovery">
+                    <h1><a href="http://of.gs"  target="_blank">of.gs</a></h1>
+                    <p>
+                        @of，最短单词
+                    </p>
+                </div>
+                <div class="scientist">
+                    <h1><a href="http://64.gs"  target="_blank">64.gs</a></h1>
+                    <span>@64</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>&nbsp;(20)8f域名</time>
+                <div class="discovery">
+                    <h1><a href="http://8f.gs"  target="_blank">8f.gs</a></h1>
+                    <p>
+                        @8福
+                    </p>
+                </div>
+                <div class="scientist">
+                    <h1><a href="http://8f.pw"  target="_blank">8f.pw</a></h1>
+                    <span>@8福</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>&nbsp;(21)444域名</time>
+                <div class="discovery">
+                    <h1><a href="http://444.mba"  target="_blank">444.mba</a></h1>
+                    <p>
+                        @444豹子
+                    </p>
+                </div>
+                <div class="scientist">
+                    <h1><a href="http://444.fyi"  target="_blank">444.fyi</a></h1>
+                    <span>@444豹子</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>&nbsp;(22).fyi域名</time>
+                <div class="discovery">
+                    <h1><a href="http://222.fyi"  target="_blank">222.fyi</a></h1>
+                    <p>
+                        @222豹子
+                    </p>
+                </div>
+                <div class="scientist">
+                    <h1><a href="http://555.fyi"  target="_blank">555.fyi</a></h1>
+                    <span>@555豹子</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>&nbsp;(23).cn域名</time>
+                <div class="discovery">
+                    <h1><a href="http://44444.org.cn"  target="_blank">44444.org.cn</a></h1>
+                    <p>
+                        @44444豹子
+                    </p>
+                </div>
+                <div class="scientist">
+                    <h1><a href="http://mmmmm.net.cn"  target="_blank">mmmmm.net.cn</a></h1>
+                    <span>@mmmmm豹子</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>&nbsp;(24).biz域名</time>
+                <div class="discovery">
+                    <h1><a href="http://222222.biz"  target="_blank">222222.biz</a></h1>
+                    <p>
+                        @222222豹子
+                    </p>
+                </div>
+                <div class="scientist">
+                    <h1><a href="http://555555.biz"  target="_blank">555555.biz</a></h1>
+                    <span>@555555豹子</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>&nbsp;(25).ac.cn域名</time>
+                <div class="discovery">
+                    <h1><a href="http://37.ac.cn"  target="_blank">37.ac.cn</a></h1>
+                    <p>
+                        @科技域名
+                    </p>
+                </div>
+                <div class="scientist">
+                    <h1><a href="http://00.ac.cn"  target="_blank">00.ac.cn</a></h1>
+                    <span>@00</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>&nbsp;(26)其他域名</time>
+                <div class="scientist">
+                    <h1><a href="http://3030.ltd"  target="_blank">3030.ltd</a></h1>
+                    <span>@3030</span>
+                </div>
+            </div>
+        </li>
+        
+        
+    </ul>
+</section>
+<header class="site-header">
+  <div class="wrapper">
+    <a href="http://kkkk.info"  target="_blank"><h3 class="site-header__cike">kkkk.info / 听松阁</h3></a>
+  </div>
+</header>
+
+<script>
+var items = document.querySelectorAll(".timeline li");
+
+function isElementInViewport(el) {
+  var rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+function callbackFunc() {
+  for (var i = 0; i < items.length; i++) {
+    if (isElementInViewport(items[i])) {
+      if(!items[i].classList.contains("in-view")){
+        items[i].classList.add("in-view");
+      }
+    } else if(items[i].classList.contains("in-view")) {
+        items[i].classList.remove("in-view");
+    }
+  }
+}
+ 
+window.addEventListener("load", callbackFunc);
+window.addEventListener("scroll", callbackFunc);
+</script>
+
+</body>
+</html>
